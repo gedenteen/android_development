@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="onClickAdd"
+        android:text="Добавить запись"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/buttonShowDb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickShowDb"
+        android:text="Вывести содержимое базы данных"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAdd"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TableLayout
+        android:id="@+id/tableForDb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/buttonClear"
+        android:textColor="#FF000000"
+        tools:layout_editor_absoluteX="129dp">
+
+<!--        <TableRow-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:textColor="@color/black" />-->
+
+<!--        <TableRow-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:textColor="@color/black" />-->
+
+<!--        <TableRow-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:textColor="@color/black" />-->
+
+<!--        <TableRow-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:textColor="#000000" />-->
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="237dp"
+        android:layout_height="44dp"
+        android:onClick="onClickClear"
+        android:text="Очистить базу данных"
+        app:layout_constraintTop_toBottomOf="@+id/buttonShowDb"
+        tools:layout_editor_absoluteX="19dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

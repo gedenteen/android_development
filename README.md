@@ -5,7 +5,10 @@ with Android Studio, Unity Engine
 --- | --- |
 lab1 | Калькулятор | 
 lab2 | Тестовая программа с использованием вкладок, ListView, TableLayout |
-lab3 | Игра "Жуки" с использованием потоков |
+lab3_bugs | Игра "Жуки" с использованием потоков |
+lab4_compass | Компас |
+lab5_sql| База данных mysql и интерфейс для работы с ней |
+lab6_widget| Виджет с котировками металлов |
 
 ## Unity Engine
 **my_platformer** - мини-игра в жанре платформер
